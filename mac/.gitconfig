@@ -1,0 +1,19 @@
+[user]
+	name = Christoph Burgdorf
+	email = christoph.burgdorf@bvsn.org
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[alias]
+	lg = log --pretty=oneline --abbrev-commit --graph --decorate
+	ca = !git add -A && git commit
+	df = diff -U99999999
+	sdf = diff --stat
+	lsdf = diff head~1 --stat
+	ldf = diff head~1 -U9999999
+[merge]
+	tool = opendiff
+[mergetool]
+	keepBackup = false
+[diff]

@@ -1,0 +1,14 @@
+# Make vim the default editor
+export EDITOR="vim"
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Larger bash history (allow 32³ entries; default is 500)
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+
+#Sencha Commandline Magic
+export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:$PATH
+export SENCHA_SDK_TOOLS_2_0_0_BETA3="/Applications/SenchaSDKTools-2.0.0-beta3"
+export SENCHA_CMD_3_0_0="/Users/cburgdorf/bin/Sencha/Cmd/3.0.0.122"
