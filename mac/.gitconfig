@@ -6,12 +6,15 @@
 [color]
 	ui = true
 [alias]
-	lg = log --pretty=oneline --abbrev-commit --graph --decorate
-	ca = !git add -A && git commit
-	df = diff -U99999999
-	sdf = diff --stat
-	lsdf = diff head~1 --stat
-	ldf = diff head~1 -U9999999
+        wip= !git add -A && git commit -m "WIP"¬
+ 	ap = !git add -A && git commit --amend --no-edit¬
+ 	lg = log --pretty=oneline --abbrev-commit --graph --decorate¬
+ 	ca = !git add -A && git commit¬
+ 	df = diff -U99999999¬
+ 	sdf = diff --stat¬
+ 	lsdf = diff head~1 --stat¬
+ 	ldf = diff head~1 -U9999999¬
+ 	tagz = log --tags --simplify-by-decoration --pretty='format:%d'¬
 [merge]
 	tool = opendiff
 [mergetool]
