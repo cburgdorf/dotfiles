@@ -5,16 +5,20 @@
 	helper = osxkeychain
 [color]
 	ui = true
+    whitespace = red reverse
 [alias]
-        wip= !git add -A && git commit -m "WIP"¬
- 	ap = !git add -A && git commit --amend --no-edit¬
- 	lg = log --pretty=oneline --abbrev-commit --graph --decorate¬
- 	ca = !git add -A && git commit¬
- 	df = diff -U99999999¬
- 	sdf = diff --stat¬
- 	lsdf = diff head~1 --stat¬
- 	ldf = diff head~1 -U9999999¬
- 	tagz = log --tags --simplify-by-decoration --pretty='format:%d'¬
+	ec = config --global -e
+	pl =!"git pull; git submodule foreach git pull origin master"
+	wip= !git add -A && git commit -m "WIP"
+	ap = !git add -A && git commit --amend --no-edit
+	lg = log --pretty=oneline --abbrev-commit --graph --decorate
+	ca = !git add -A && git commit
+	df = diff -U99999999
+	sdf = diff --stat
+	lsdf = diff head~1 --stat
+	ldf = diff head~1 -U9999999
+	tagz = log --tags --simplify-by-decoration --pretty='format:%d'
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 [merge]
 	tool = opendiff
 [mergetool]
